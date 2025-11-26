@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      html {
-        background-color: #161617;
-      }
-      .root {
-        height: 800px;
-        background-color: #161617;
-      }
-      .container {
-        margin: 0 auto;
-        width: 1260px;
-        padding: 152px 0 62px;
-      }
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 40px;
-
-        & h1 {
-          margin: 0;
-          font-size: 46px;
-          color: #86868b;
+        html {
+            background-color: #161617;
         }
 
-        & a {
-          color: #2997ff;
-          font-size: 21px;
+        .root {
+            height: 800px;
         }
-      }
-      .card-flex-box {
-        display: flex;
-        list-style-type: none;
-        margin: 25px 0;
-        padding: 0;
-        gap: 25px;
-      }
 
-      .card {
-        flex-shrink: 0;
-        border-radius: 28px;
-        width: 372px;
-        height: 348px;
-        background-color: black;
-        transition: all 0.3s ease-in-out;
-      }
+        .container {
+            margin: 0 auto;
+            width: 1260px;
+            padding: 152px 0 62px;
+        }
 
-      .card:hover {
-        transform: scale(105%);
-      }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 40px;
+
+            & h1 {
+                margin: 0;
+                font-size: 48px;
+                color: #86868b;
+            }
+
+            & a {
+                font-size: 21px;
+                color: #2997ff;
+            }
+        }
+
+        .card-flex-box {
+            display: flex;
+            gap: 25px;
+            list-style-type: none;
+            margin: 25px 0;
+            padding: 0;
+        }
+
+        .card {
+            flex-shrink: 0;
+            border-radius: 28px;
+            width: 372px;
+            height: 348px;
+            background-color: black;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(105%);
+        }
+
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="root">
-      <div class="container">
-        <div class="header">
-          <div>
-            <h1>iPad, Apple에서 사면</h1>
-            <h1>가장 좋은 이유.</h1>
-          </div>
-          <div>
-            <a href="">iPad쇼핑하기></a>
-          </div>
+        <div class="container">
+            <div class="header">
+                <div>
+                    <h1>iPad, Apple에서 사면</h1>
+                    <h1>가장 좋은 이유.</h1>
+                </div>
+                <div>
+                    <a href="">iPad 쇼핑하기</a>
+                </div>
+            </div>
+
+            <ul class="card-flex-box">
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+                <li class="card"></li>
+            </ul>
+
         </div>
-        <ul class="card-flex-box">
-          <li class="card"></li>
-          <li class="card"></li>
-          <li class="card"></li>
-          <li class="card"></li>
-        </ul>
-      </div>
     </div>
-  </body>
+</body>
 </html>
